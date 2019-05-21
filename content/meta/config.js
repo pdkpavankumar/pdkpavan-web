@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: "PDKPavan - blog", // <title>
   shortSiteTitle: "PDKPavan - blog", // <title> ending for posts and pages
-  siteDescription: "PDKPavan - blog.",
+  siteDescription: "blog where i publish my articles, moslty about javascript, typescript, UI tech stack e.t.c ",
   siteUrl: "https://pdkpavan.com",
   // pathPrefix: "",
   siteImage: "preview.jpg",
