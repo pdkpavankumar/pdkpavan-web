@@ -66,7 +66,6 @@ Here are something i really think cool about async/await and boosts promises
 ```javascript
 //Before
 fun().then((resp) => console.log(resp));
-
 //After 
 resp = await fun();
 console.log(resp);
@@ -74,7 +73,7 @@ console.log(resp);
 2. Debugging is simple
 Previously  you can set breakpoints in arrow methods that returns expressions now with async/await you can easily keep breakpoints in the code where is no body.
 
-  3. Error Handling
+3. Error Handling
 As explained above now error handling with try/catch is possible.
 4. Nested promises and conditional promises
 Imagine we have nested promises like a new server call has to be made based on intermittent server call. 
