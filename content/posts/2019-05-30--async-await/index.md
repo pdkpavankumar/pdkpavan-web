@@ -86,7 +86,6 @@ serverCall1().then((resp) => {
     });
 });
 }
-
 //Now 
 fun = async () => {
 const resp = await serverCall1();
