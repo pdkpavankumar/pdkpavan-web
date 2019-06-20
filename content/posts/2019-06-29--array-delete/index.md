@@ -8,7 +8,7 @@ author: P D K Pavan Kumar
 ## Different ways to remove/delete items from an array
 
 **1. Length**
-$\qquad$JavaScript array elements can be removed by setting length property less the array length. This approach will only remove the elements which are at the tail position.
+JavaScript array elements can be removed by setting length property less the array length. This approach will only remove the elements which are at the tail position.
 ```javascript
 > arr = [1,2,3,4,5];
  (5) [1, 2, 3, 4, 5]
@@ -18,7 +18,7 @@ $\qquad$JavaScript array elements can be removed by setting length property less
  (3) [1, 2, 3]
 ```
 **2. POP**
-$\qquad$ Pop method removes and returns the last element from the array.
+Pop method removes and returns the last element from the array.
 ```javascript
 > arr = [1,2,3,4,5];
  (5) [1, 2, 3, 4, 5]
@@ -30,7 +30,7 @@ $\qquad$ Pop method removes and returns the last element from the array.
  (4) [1, 2, 3, 4]
 ```
 **3. Shift**
-$\qquad$ Shift methods works same like pop only difference is instead of last element it removes the first element from the array.
+Shift methods works same like pop only difference is instead of last element it removes the first element from the array.
 ```javascript
 > arr = [1,2,3,4,5];
  (5) [1, 2, 3, 4, 5]
@@ -40,7 +40,7 @@ $\qquad$ Shift methods works same like pop only difference is instead of last el
  (4) [2, 3, 4, 5]
 ```
 **4. Splice**
-$\qquad$ Splice method is used to remove multiple sequential elements from an array.
+Splice method is used to remove multiple sequential elements from an array.
 ```javascript
 >arr = [1,2,3,4,5,6,7,8]
  (8) [1, 2, 3, 4, 5, 6, 7, 8]
@@ -50,7 +50,7 @@ $\qquad$ Splice method is used to remove multiple sequential elements from an ar
  (6) [1, 2, 5, 6, 7, 8]
 ```
 **5.  Array Filter**
-$\qquad$ This is safe method. Unlike splice it will create a new array instead of mutating the original array.
+This is safe method. Unlike splice it will create a new array instead of mutating the original array.
 ```javascript
 > arr = [1,2,3,4,5,6,7,8]
 (8) [1, 2, 3, 4, 5, 6, 7, 8]
@@ -62,7 +62,7 @@ $\qquad$ This is safe method. Unlike splice it will create a new array instead o
 (6) [1, 2, 5, 6, 7, 8]
 ```
 **6. Delete**
-$\qquad$ delete operator is used to delete a specific element from the array.
+delete operator is used to delete a specific element from the array.
 If you see the below code the array length is same and it makes the value undefined. this is happening because delete is designed to remove the properties in an object and array is also an object.
 
 The reason the element is not actually removed from the array is the delete operator is more about freeing memory than deleting an element. The memory is freed when there are no more references to the value.
@@ -77,7 +77,7 @@ The reason the element is not actually removed from the array is the delete oper
  undefined
 ```
 **7.  clear/reset**
-$\qquad$ Using this approaches we can clear the entire array. 
+Using this approaches we can clear the entire array. 
 
 - assigning an empty array
 ```javascript
@@ -102,16 +102,17 @@ $\qquad$ Using this approaches we can clear the entire array.
 []
 ```
 **8. lodash**
-$\qquad$ we can always use 3rd party library methods to perform this operation. here i took lodash as an example.
+we can always use 3rd party library methods to perform this operation. here i took lodash as an example.
 lodash has remove method its syntax is similar to filter but the operation return matching elements.
 ```javascript
 >arr = [1,2,3,4]
  (4) [1, 2, 3, 4]
->removedele = _.remove(arr, (ele) => ele!=2)
+>removedele = _.remove(arr, (ele) => ele!==2)
  (3) [1, 3, 4]
 >arr
  [2]
 > removedele
 (3) [1, 3, 4]
 ```
+
 --peace
