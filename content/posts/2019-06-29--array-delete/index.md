@@ -7,7 +7,7 @@ author: P D K Pavan Kumar
 
 ## Different ways to remove/delete items from an array
 
-**1. Length**
+####**1. Length**
 JavaScript array elements can be removed by setting length property less the array length. This approach will only remove the elements which are at the tail position.
 ```javascript
 > arr = [1,2,3,4,5];
@@ -17,7 +17,7 @@ JavaScript array elements can be removed by setting length property less the arr
 > arr
  (3) [1, 2, 3]
 ```
-**2. POP**
+####**2. POP**
 Pop method removes and returns the last element from the array.
 ```javascript
 > arr = [1,2,3,4,5];
@@ -29,7 +29,7 @@ Pop method removes and returns the last element from the array.
 > arr
  (4) [1, 2, 3, 4]
 ```
-**3. Shift**
+####**3. Shift**
 Shift methods works same like pop only difference is instead of last element it removes the first element from the array.
 ```javascript
 > arr = [1,2,3,4,5];
@@ -39,7 +39,7 @@ Shift methods works same like pop only difference is instead of last element it 
 > arr
  (4) [2, 3, 4, 5]
 ```
-**4. Splice**
+####**4. Splice**
 Splice method is used to remove multiple sequential elements from an array.
 ```javascript
 >arr = [1,2,3,4,5,6,7,8]
@@ -49,7 +49,7 @@ Splice method is used to remove multiple sequential elements from an array.
 > arr
  (6) [1, 2, 5, 6, 7, 8]
 ```
-**5.  Array Filter**
+####**5.  Array Filter**
 This is safe method. Unlike splice it will create a new array instead of mutating the original array.
 ```javascript
 > arr = [1,2,3,4,5,6,7,8]
@@ -61,7 +61,7 @@ This is safe method. Unlike splice it will create a new array instead of mutatin
 > newarr
 (6) [1, 2, 5, 6, 7, 8]
 ```
-**6. Delete**
+####**6. Delete**
 delete operator is used to delete a specific element from the array.
 If you see the below code the array length is same and it makes the value undefined. this is happening because delete is designed to remove the properties in an object and array is also an object.
 
@@ -76,7 +76,7 @@ The reason the element is not actually removed from the array is the delete oper
 >arr[2]
  undefined
 ```
-**7.  clear/reset**
+####**7.  clear/reset**
 Using this approaches we can clear the entire array. 
 
 - assigning an empty array
@@ -101,7 +101,7 @@ Using this approaches we can clear the entire array.
 >arr
 []
 ```
-**8. lodash**
+####**8. lodash**
 we can always use 3rd party library methods to perform this operation. here i took lodash as an example.
 lodash has remove method its syntax is similar to filter but the operation return matching elements.
 ```javascript
